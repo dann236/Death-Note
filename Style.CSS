@@ -1,0 +1,301 @@
+/* =========================
+   DASAR
+========================= */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background-color: #080808;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+/* =========================
+   NAVBAR
+========================= */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(5, 5, 5, 0.95);
+    border-bottom: 1px solid #333;
+    z-index: 1000;
+}
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+.nav-links a:hover {
+    color: #b00000;
+}
+/* =========================
+   HERO
+========================= */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:
+        radial-gradient(
+            circle,
+            #4a0000 0%,
+            #180000 30%,
+            #080808 70%
+        );
+}
+.hero-content {
+    width: 90%;
+    max-width: 800px;
+}
+.subtitle {
+    color: #aaa;
+    letter-spacing: 5px;
+    font-size: 13px;
+}
+.hero h1 {
+    font-size: 70px;
+    margin: 15px 0;
+    letter-spacing: 10px;
+    text-shadow:
+        0 0 10px #800000,
+        0 0 30px #500000;
+}
+.quote {
+    color: #aaa;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+/* =========================
+   INPUT
+========================= */
+.note-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.note-form input {
+    width: 300px;
+    padding: 14px;
+    box-sizing: border-box;
+    background-color: #111;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 5px;
+    outline: none;
+    font-size: 15px;
+}
+.note-form input:focus {
+    border-color: #a00000;
+    box-shadow: 0 0 10px rgba(150, 0, 0, 0.4);
+}
+/* =========================
+   BUTTON
+========================= */
+button {
+    padding: 14px 25px;
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: #c00000;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #700000;
+}
+/* =========================
+   COUNTDOWN
+========================= */
+.countdown {
+    margin-top: 30px;
+    font-size: 45px;
+    font-weight: bold;
+    color: #b00000;
+    text-shadow: 0 0 15px #700000;
+}
+/* =========================
+   SECTION
+========================= */
+.section {
+    min-height: 70vh;
+    padding: 120px 8%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.section-label {
+    color: #a00000;
+    font-size: 13px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+.section h2 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+.section-text {
+    max-width: 700px;
+    margin: 20px auto;
+    color: #aaa;
+    line-height: 1.7;
+}
+/* =========================
+   RULES
+========================= */
+.dark-section {
+    background-color: #050505;
+}
+.rules-container {
+    max-width: 700px;
+    margin: 50px auto;
+    text-align: left;
+}
+.rule {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #111;
+    border-left: 3px solid #8b0000;
+}
+.rule span {
+    color: #a00000;
+    font-size: 22px;
+    font-weight: bold;
+}
+.rule p {
+    color: #aaa;
+    line-height: 1.5;
+}
+/* =========================
+   FOOTER
+========================= */
+footer {
+    padding: 40px;
+    text-align: center;
+    background-color: #030303;
+    border-top: 1px solid #222;
+}
+footer h3 {
+    letter-spacing: 4px;
+}
+footer p {
+    color: #777;
+}
+.copyright {
+    font-size: 13px;
+}
+/* =========================
+   DEATH PAGE
+========================= */
+.death-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:
+        radial-gradient(
+            circle,
+            #350000 0%,
+            #100000 35%,
+            #050505 75%
+        );
+}
+.death-container {
+    width: 90%;
+    max-width: 700px;
+}
+.skull {
+    font-size: 100px;
+    margin: 20px 0;
+    color: #b00000;
+    text-shadow:
+        0 0 20px #800000,
+        0 0 50px #400000;
+}
+.death-container h1 {
+    font-size: 50px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.death-message {
+    color: #aaa;
+    font-style: italic;
+}
+.death-note-info {
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+.death-note-info h2 {
+    letter-spacing: 5px;
+}
+.death-note-info p {
+    color: #999;
+    line-height: 1.6;
+}
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .hero h1 {
+        font-size: 42px;
+        letter-spacing: 5px;
+    }
+    .subtitle {
+        letter-spacing: 3px;
+    }
+    .note-form {
+        flex-direction: column;
+        align-items: center;
+    }
+    .note-form input {
+        width: 100%;
+        max-width: 350px;
+    }
+    .note-form button {
+        width: 100%;
+        max-width: 350px;
+    }
+    .death-container h1 {
+        font-size: 35px;
+    }
+    .skull {
+        font-size: 70px;
+    }
+}
+
+.hero-logo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    mix-blend-mode: screen;
+}

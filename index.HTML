@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Death Note</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">DEATH NOTE</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#rules">Rules</a>
+        </div>
+    </nav>
+    <!-- Home -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img
+                src="gambar1.jpg"
+                alt="Death Note"
+                class="hero-logo"
+            >
+            <p class="subtitle">THE HUMAN WHOSE NAME IS WRITTEN</p>
+            <h1>DEATH NOTE</h1>
+            <p class="quote">
+                "The human whose name is written in this note shall die."
+            </p>
+            <!-- Input Nama -->
+            <div class="note-form">
+                <input
+                    type="text"
+                    id="nameInput"
+                    placeholder="Enter a name..."
+                    autocomplete="off"
+                >
+                <button onclick="startDeathNote()">
+                    WRITE NAME
+                </button>
+            </div>
+            <!-- Countdown -->
+            <div id="countdown" class="countdown"></div>
+        </div>
+    </section>
+    <!-- About -->
+    <section id="about" class="section">
+        <p class="section-label">ABOUT</p>
+        <h2>The Death Note</h2>
+        <p class="section-text">
+            Death Note adalah sebuah notebook misterius
+            yang memiliki kekuatan supernatural. Dalam cerita,
+            nama seseorang yang ditulis di dalamnya dapat
+            menyebabkan kematian orang tersebut.
+        </p>
+    </section>
+    <!-- Rules -->
+    <section id="rules" class="section dark-section">
+        <p class="section-label">RULES</p>
+        <h2>Rules of Death Note</h2>
+        <div class="rules-container">
+            <div class="rule">
+                <span>01</span>
+                <p>
+                    Nama manusia yang ditulis di dalam Death Note
+                    akan meninggal.
+                </p>
+            </div>
+            <div class="rule">
+                <span>02</span>
+                <p>
+                    Penulis harus membayangkan wajah orang tersebut
+                    ketika menulis namanya.
+                </p>
+            </div>
+            <div class="rule">
+                <span>03</span>
+                <p>
+                    Jika penyebab kematian tidak ditulis,
+                    korban akan meninggal karena serangan jantung.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <h3>DEATH NOTE</h3>
+        <p>Fan-made website project</p>
+        <p class="copyright">
+            © 2026 Dann
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
